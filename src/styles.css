@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style f.iles */
+.colornav{
+    background: #ef32d9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.kurenaido{
+    font-family: 'Zen Kurenaido'
+}
+
+.titulo{
+    font-family: 'Libre Baskerville';
+    font-size: 64px !important;
+}
+@media only screen and (max-width:480px){
+    .titulo{
+        font-size: 38px !important;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .titulo{
+        font-size: 28px !important;
+    }
+}
+
+.fontNumeros{
+    font-family: 'Numans'  !important;
+    font-size: 19px !important;
+    background-color: #b4a8ee !important;
+}

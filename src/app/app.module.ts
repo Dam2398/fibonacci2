@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SerieFibonacciComponent
+    SerieFibonacciComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

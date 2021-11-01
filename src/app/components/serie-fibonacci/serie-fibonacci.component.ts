@@ -16,7 +16,7 @@ export class SerieFibonacciComponent implements OnInit {
     private fb: FormBuilder
   ) {
     this.numeroFibo = this.fb.group({
-      numero: ['', Validators.required]
+      numero: ['', Validators.compose([Validators.required, Validators.min(-1) ,Validators.pattern('^(0|[1-9][0-9]*)$')]) ]
     })
    }
 
@@ -28,28 +28,17 @@ export class SerieFibonacciComponent implements OnInit {
       numero: this.numeroFibo.get('numero')?.value,
     }
     console.log(NUMERO.numero);
-    let raiz1, raiz2;
+
     let x1,x2;
 
     x1 = 5*Math.pow(NUMERO.numero,2)+4;
     x2 = 5*Math.pow(NUMERO.numero,2)-4;
 
-    if (Math.sqrt(x1)%1 === 0) {
-      console.log(`${x1} es numero perfecto 1`);
+    if((Math.sqrt(x2)%1 ===0) || (Math.sqrt(x1)%1 === 0)){
       Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: 'Your work has been saved',
-        showConfirmButton: false,
-        timer: 1500
-      })
-      
-    }else if(Math.sqrt(x2)%1 ===0){
-      console.log(`${x2} es numero perfecto 2`);
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Your work has been saved',
+        title: 'Genial! Es un numero de Fibonacci!',
         showConfirmButton: false,
         timer: 1500
       })

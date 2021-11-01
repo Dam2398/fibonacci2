@@ -1,9 +1,28 @@
 /* You can add global styles to this file, and also import other style f.iles */
+
+
+.imagenback {
+    position: fixed;
+    transform: rotate(347deg);
+    z-index: -1;
+    top: 10%;
+    left: 60%;
+    width: 450px;
+    opacity: 0.4;
+}
+
+
 .colornav{
-    background: #ef32d9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
+}
+.colorfooter{
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .kurenaido{
@@ -30,4 +49,5 @@
     font-family: 'Numans'  !important;
     font-size: 19px !important;
     background-color: #b4a8ee !important;
+    border-color:#b4a8ee !important;
 }
